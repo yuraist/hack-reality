@@ -55,7 +55,7 @@ private extension SceneView {
     addNewCubeModel(
       size: 0.2,
       position: SCNVector3(0, 0, -1),
-      texture: UIImage(named: "stas.png"),
+      texture: UIImage(named: "stas"),
       scene: scene
     )
   }
