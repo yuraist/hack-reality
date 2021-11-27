@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F0B27521FB0003BAE68 /* AppDelegate.swift */; };
 		BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F0D27521FB0003BAE68 /* ContentView.swift */; };
-		BE105F1027521FB0003BAE68 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = BE105F0F27521FB0003BAE68 /* Experience.rcproject */; };
 		BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE105F1127521FB1003BAE68 /* Assets.xcassets */; };
 		BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE105F1427521FB1003BAE68 /* Preview Assets.xcassets */; };
+		BE105F1C275220EC003BAE68 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1B275220EC003BAE68 /* ARViewContainer.swift */; };
+		BE105F1E275220F9003BAE68 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1D275220F9003BAE68 /* ARView+Extensions.swift */; };
+		BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1F27522435003BAE68 /* BodySkeleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE105F0827521FB0003BAE68 /* StrangeBody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangeBody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE105F0B27521FB0003BAE68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE105F0D27521FB0003BAE68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BE105F0F27521FB0003BAE68 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		BE105F1127521FB1003BAE68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE105F1427521FB1003BAE68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE105F1B275220EC003BAE68 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		BE105F1D275220F9003BAE68 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
+		BE105F1F27522435003BAE68 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
-				BE105F0F27521FB0003BAE68 /* Experience.rcproject */,
+				BE105F1B275220EC003BAE68 /* ARViewContainer.swift */,
+				BE105F1D275220F9003BAE68 /* ARView+Extensions.swift */,
+				BE105F1F27522435003BAE68 /* BodySkeleton.swift */,
 				BE105F1127521FB1003BAE68 /* Assets.xcassets */,
 				BE105F1327521FB1003BAE68 /* Preview Content */,
 			);
@@ -141,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */,
+				BE105F1C275220EC003BAE68 /* ARViewContainer.swift in Sources */,
+				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,
 				BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */,
-				BE105F1027521FB0003BAE68 /* Experience.rcproject in Sources */,
+				BE105F1E275220F9003BAE68 /* ARView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
