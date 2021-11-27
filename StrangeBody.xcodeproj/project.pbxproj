@@ -14,6 +14,8 @@
 		BE105F1C275220EC003BAE68 /* ARBodyViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1B275220EC003BAE68 /* ARBodyViewContainer.swift */; };
 		BE105F1E275220F9003BAE68 /* ARBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1D275220F9003BAE68 /* ARBodyView.swift */; };
 		BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1F27522435003BAE68 /* BodySkeleton.swift */; };
+		BE105F42275238C0003BAE68 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F41275238C0003BAE68 /* SceneView.swift */; };
+		BE105F4527523DA0003BAE68 /* stas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE105F4427523DA0003BAE68 /* stas.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BE105F1B275220EC003BAE68 /* ARBodyViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBodyViewContainer.swift; sourceTree = "<group>"; };
 		BE105F1D275220F9003BAE68 /* ARBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBodyView.swift; sourceTree = "<group>"; };
 		BE105F1F27522435003BAE68 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
+		BE105F41275238C0003BAE68 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		BE105F4427523DA0003BAE68 /* stas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stas.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			children = (
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
+				BE105F4327523BD3003BAE68 /* Objects */,
 				BE105F21275235BD003BAE68 /* Body */,
 				BE105F1127521FB1003BAE68 /* Assets.xcassets */,
 				BE105F1327521FB1003BAE68 /* Preview Content */,
@@ -82,6 +87,15 @@
 				BE105F1F27522435003BAE68 /* BodySkeleton.swift */,
 			);
 			path = Body;
+			sourceTree = "<group>";
+		};
+		BE105F4327523BD3003BAE68 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BE105F41275238C0003BAE68 /* SceneView.swift */,
+				BE105F4427523DA0003BAE68 /* stas.jpg */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */,
+				BE105F4527523DA0003BAE68 /* stas.jpg in Resources */,
 				BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +174,7 @@
 				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,
 				BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */,
 				BE105F1E275220F9003BAE68 /* ARBodyView.swift in Sources */,
+				BE105F42275238C0003BAE68 /* SceneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
