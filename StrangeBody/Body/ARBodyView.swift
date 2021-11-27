@@ -1,5 +1,5 @@
 //
-//  ARView+Extensions.swift
+//  ARBodyView.swift
 //  StrangeBody
 //
 //  Created by Юрий Истомин on 27.11.2021.
@@ -8,12 +8,15 @@
 import ARKit
 import RealityKit
 
-extension ARView: ARSessionDelegate {
+class ARBodyView: ARView {
   func setupForBodyTracking() {
     let config = ARBodyTrackingConfiguration()
     self.session.run(config)
     self.session.delegate = self
   }
+}
+
+extension ARBodyView: ARSessionDelegate {
   
   public func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
     for anchor in anchors {

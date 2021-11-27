@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView : View {
   var body: some View {
-    return ARViewContainer().edgesIgnoringSafeArea(.all)
+    return ARBodyViewContainer().edgesIgnoringSafeArea(.all)
   }
 }
 
