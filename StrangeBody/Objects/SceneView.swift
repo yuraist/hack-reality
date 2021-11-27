@@ -20,14 +20,19 @@ struct SceneViewContainer: UIViewRepresentable {
 }
 
 class SceneView: ARSCNView {
+  
+  private let configuration = ARWorldTrackingConfiguration()
+  private var planes: [Plane] = []
+  
   func configure() {
     delegate = self
     
-    let configuration = ARWorldTrackingConfiguration()
     scene = SCNScene()
     session.run(configuration)
+    session.delegate = self
     
     addStasCube()
+    switchOnPlaneDetection()
   }
 }
 
@@ -46,6 +51,22 @@ extension SceneView: ARSCNViewDelegate {
   func sessionInterruptionEnded(_ session: ARSession) {
     // Reset tracking and/or remove existing anchors if consistent tracking is required
     
+  }
+}
+
+// MARK: - ARSessionDelegate
+extension SceneView: ARSessionDelegate {
+  func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+    guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
+    
+    let plane = Plane(anchor: planeAnchor)
+    planes.append(plane)
+    node.addChildNode(plane)
+  }
+  
+  func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+    guard let plane = planes.filter({ $0.anchor.identifier == anchor.identifier }).first else { return }
+    plane.update(anchor: anchor as! ARPlaneAnchor)
   }
 }
 
@@ -81,5 +102,10 @@ private extension SceneView {
   func addNewCubeModel(size: CGFloat, position: SCNVector3, texture: Any?, scene: SCNScene) {
     let node = getCubeNode(size: size, position: position, texture: texture)
     scene.rootNode.addChildNode(node)
+  }
+  
+  func switchOnPlaneDetection() {
+    debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+    configuration.planeDetection = [.horizontal, .vertical]
   }
 }
