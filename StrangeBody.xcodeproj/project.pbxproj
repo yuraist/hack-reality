@@ -16,6 +16,7 @@
 		BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1F27522435003BAE68 /* BodySkeleton.swift */; };
 		BE105F42275238C0003BAE68 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F41275238C0003BAE68 /* SceneView.swift */; };
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
+		BE105F492752B5BA003BAE68 /* Bulka.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE105F482752B5BA003BAE68 /* Bulka.reality */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BE105F1F27522435003BAE68 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 		BE105F41275238C0003BAE68 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		BE105F46275241A0003BAE68 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		BE105F482752B5BA003BAE68 /* Bulka.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bulka.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		BE105F0A27521FB0003BAE68 /* StrangeBody */ = {
 			isa = PBXGroup;
 			children = (
+				BE105F4A2752B61F003BAE68 /* Reality */,
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
 				BE105F4327523BD3003BAE68 /* Objects */,
@@ -96,6 +99,14 @@
 				BE105F46275241A0003BAE68 /* Plane.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		BE105F4A2752B61F003BAE68 /* Reality */ = {
+			isa = PBXGroup;
+			children = (
+				BE105F482752B5BA003BAE68 /* Bulka.reality */,
+			);
+			path = Reality;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */,
+				BE105F492752B5BA003BAE68 /* Bulka.reality in Resources */,
 				BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +320,7 @@
 				DEVELOPMENT_TEAM = N2HCJ99WYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use Augmented Reality, this app needs the access to your camera.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -339,7 +351,7 @@
 				DEVELOPMENT_TEAM = N2HCJ99WYH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To use Augmented Reality, this app needs the access to your camera.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
