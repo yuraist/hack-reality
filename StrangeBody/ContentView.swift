@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView : View {
   var body: some View {
-    SceneViewContainer()
-      .edgesIgnoringSafeArea(.all)
+    ZStack {
+      SceneViewContainer()
+      ControlView()
+    }
+    .edgesIgnoringSafeArea(.all)
   }
 }
 

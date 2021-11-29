@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE005F47275557F700448CE4 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE005F46275557F700448CE4 /* ControlView.swift */; };
 		BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F0B27521FB0003BAE68 /* AppDelegate.swift */; };
 		BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F0D27521FB0003BAE68 /* ContentView.swift */; };
 		BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE105F1127521FB1003BAE68 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE005F46275557F700448CE4 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		BE105F0827521FB0003BAE68 /* StrangeBody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrangeBody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE105F0B27521FB0003BAE68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE105F0D27521FB0003BAE68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				BE105F4A2752B61F003BAE68 /* Reality */,
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
+				BE005F46275557F700448CE4 /* ControlView.swift */,
 				BE105F4327523BD3003BAE68 /* Objects */,
 				BE105F21275235BD003BAE68 /* Body */,
 				BE105F1127521FB1003BAE68 /* Assets.xcassets */,
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE005F47275557F700448CE4 /* ControlView.swift in Sources */,
 				BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */,
 				BE105F1C275220EC003BAE68 /* ARBodyViewContainer.swift in Sources */,
 				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,
