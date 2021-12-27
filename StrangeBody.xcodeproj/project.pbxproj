@@ -18,6 +18,7 @@
 		BE105F42275238C0003BAE68 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F41275238C0003BAE68 /* SceneView.swift */; };
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
 		BE105F492752B5BA003BAE68 /* Bulka.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE105F482752B5BA003BAE68 /* Bulka.reality */; };
+		BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A4277A2080003F52F4 /* BrowseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BE105F41275238C0003BAE68 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		BE105F46275241A0003BAE68 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		BE105F482752B5BA003BAE68 /* Bulka.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bulka.reality; sourceTree = "<group>"; };
+		BE4AA2A4277A2080003F52F4 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
 				BE005F46275557F700448CE4 /* ControlView.swift */,
+				BE4AA2A4277A2080003F52F4 /* BrowseView.swift */,
 				BE105F4327523BD3003BAE68 /* Objects */,
 				BE105F21275235BD003BAE68 /* Body */,
 				BE105F1127521FB1003BAE68 /* Assets.xcassets */,
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE005F47275557F700448CE4 /* ControlView.swift in Sources */,
+				BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */,
 				BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */,
 				BE105F1C275220EC003BAE68 /* ARBodyViewContainer.swift in Sources */,
 				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,

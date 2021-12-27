@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ControlView: View {
   
+  @Binding var showBrowse: Bool
+  
   @State private var isControlsVisible = true
   
   var body: some View {
@@ -18,7 +20,7 @@ struct ControlView: View {
       Spacer()
       
       if isControlsVisible {
-        ControlButtonBar()
+        ControlButtonBar(showBrowse: $showBrowse)
       }
     }
   }
@@ -26,7 +28,7 @@ struct ControlView: View {
 
 struct ControlView_Previews: PreviewProvider {
   static var previews: some View {
-    ControlView()
+    ControlView(showBrowse: .constant(false))
   }
 }
 
@@ -60,6 +62,9 @@ struct ControlVisibilityToggleButton: View {
 }
 
 struct ControlButtonBar: View {
+  
+  @Binding var showBrowse: Bool
+  
   var body: some View {
     HStack {
       ControlButton(systemIconName: "clock.fill") {
@@ -69,7 +74,9 @@ struct ControlButtonBar: View {
       Spacer()
       
       ControlButton(systemIconName: "square.grid.2x2") {
-        
+        showBrowse = true
+      }.sheet(isPresented: $showBrowse) {
+        BrowseView(showBrowse: $showBrowse)
       }
       
       Spacer()

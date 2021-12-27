@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ContentView : View {
+  
+  @State private var showBrowse = false
+  
   var body: some View {
     ZStack {
       SceneViewContainer()
-      ControlView()
+      ControlView(showBrowse: $showBrowse)
     }
     .edgesIgnoringSafeArea(.all)
   }
