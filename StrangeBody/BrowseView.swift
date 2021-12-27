@@ -14,7 +14,7 @@ struct BrowseView: View {
   var body: some View {
     NavigationView {
       ScrollView(showsIndicators: false) {
-        
+        HorizontalGrid()
       }
       .navigationTitle("Browse")
       .toolbar {
@@ -25,6 +25,32 @@ struct BrowseView: View {
             Text("Done")
           }
         }
+      }
+    }
+  }
+}
+
+struct HorizontalGrid: View {
+  
+  private let gridLayout = [GridItem(.fixed(150))]
+  
+  var body: some View {
+    VStack(alignment: .leading) {
+      Text("Category Title")
+        .font(.title2).bold()
+        .padding(.horizontal, 22)
+        .padding(.vertical, 10)
+      
+      ScrollView(.horizontal, showsIndicators: false) {
+        LazyHGrid(rows: gridLayout, spacing: 30) {
+          ForEach(0..<5) { index in
+            Color(UIColor.secondarySystemFill)
+              .frame(width: 150, height: 150)
+              .cornerRadius(10)
+          }
+        }
+        .padding(.leading, 22)
+        .padding(.vertical, 10)
       }
     }
   }
