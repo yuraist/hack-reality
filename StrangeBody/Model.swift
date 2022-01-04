@@ -9,21 +9,21 @@ import SwiftUI
 import RealityKit
 
 enum ModelCategory: CaseIterable {
-  case table
-  case decor
+  case storage
+  case toy
   case chair
-  case light
+  case flower
   
   var label: String {
     switch self {
-    case .table:
-      return "Table"
-    case .decor:
-      return "Decor"
+    case .storage:
+      return "Storage"
+    case .toy:
+      return "Toy"
     case .chair:
       return "Chair"
-    case .light:
-      return "Light"
+    case .flower:
+      return "Flower"
     }
   }
 }
@@ -47,7 +47,17 @@ struct Models {
   var all: [Model] = []
   
   init() {
-    all = [Model(name: "Bulka", category: .table)]
+    all = [
+      Model(name: "Airplane", category: .toy),
+      Model(name: "BucketsShelf", category: .storage),
+      Model(name: "Cactus", category: .flower),
+      Model(name: "DefaultChair", category: .chair),
+      Model(name: "Flower", category: .flower),
+      Model(name: "LeatherSofa", category: .chair),
+      Model(name: "RedWhiteChair", category: .chair),
+      Model(name: "Robot", category: .toy),
+      Model(name: "Trash", category: .storage)
+    ]
   }
   
   func get(category: ModelCategory) -> [Model] {

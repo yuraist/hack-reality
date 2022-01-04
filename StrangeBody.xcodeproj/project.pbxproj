@@ -17,7 +17,6 @@
 		BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1F27522435003BAE68 /* BodySkeleton.swift */; };
 		BE105F42275238C0003BAE68 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F41275238C0003BAE68 /* SceneView.swift */; };
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
-		BE105F492752B5BA003BAE68 /* Bulka.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE105F482752B5BA003BAE68 /* Bulka.reality */; };
 		BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A4277A2080003F52F4 /* BrowseView.swift */; };
 		BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A6277A2BA3003F52F4 /* Model.swift */; };
 /* End PBXBuildFile section */
@@ -34,9 +33,17 @@
 		BE105F1F27522435003BAE68 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 		BE105F41275238C0003BAE68 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		BE105F46275241A0003BAE68 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
-		BE105F482752B5BA003BAE68 /* Bulka.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bulka.reality; sourceTree = "<group>"; };
 		BE4AA2A4277A2080003F52F4 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		BE4AA2A6277A2BA3003F52F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BE61564E277C6A3000B4CC09 /* Airplane.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Airplane.reality; sourceTree = "<group>"; };
+		BE61564F277C6A3000B4CC09 /* Robot.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Robot.reality; sourceTree = "<group>"; };
+		BE615650277C6A3100B4CC09 /* Cactus.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cactus.reality; sourceTree = "<group>"; };
+		BE615651277C6A3100B4CC09 /* LeatherSofa.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeatherSofa.reality; sourceTree = "<group>"; };
+		BE615652277C6A3100B4CC09 /* DefaultChair.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = DefaultChair.reality; sourceTree = "<group>"; };
+		BE615653277C6A3100B4CC09 /* Trash.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trash.reality; sourceTree = "<group>"; };
+		BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedWhiteChair.reality; sourceTree = "<group>"; };
+		BE615655277C6A3100B4CC09 /* Flower.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower.reality; sourceTree = "<group>"; };
+		BE615656277C6A3300B4CC09 /* BucketsShelf.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = BucketsShelf.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +120,15 @@
 		BE105F4A2752B61F003BAE68 /* Reality */ = {
 			isa = PBXGroup;
 			children = (
-				BE105F482752B5BA003BAE68 /* Bulka.reality */,
+				BE61564E277C6A3000B4CC09 /* Airplane.reality */,
+				BE615656277C6A3300B4CC09 /* BucketsShelf.reality */,
+				BE615650277C6A3100B4CC09 /* Cactus.reality */,
+				BE615652277C6A3100B4CC09 /* DefaultChair.reality */,
+				BE615655277C6A3100B4CC09 /* Flower.reality */,
+				BE615651277C6A3100B4CC09 /* LeatherSofa.reality */,
+				BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */,
+				BE61564F277C6A3000B4CC09 /* Robot.reality */,
+				BE615653277C6A3100B4CC09 /* Trash.reality */,
 			);
 			path = Reality;
 			sourceTree = "<group>";
@@ -177,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */,
-				BE105F492752B5BA003BAE68 /* Bulka.reality in Resources */,
 				BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

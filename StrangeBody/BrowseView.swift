@@ -14,7 +14,7 @@ struct BrowseView: View {
   var body: some View {
     NavigationView {
       ScrollView(showsIndicators: false) {
-        ModelsByCategoryGrid()
+        ModelsByCategoryGrid(isShowing: $showBrowse)
       }
       .navigationTitle("Browse")
       .toolbar {
@@ -35,6 +35,8 @@ struct HorizontalGrid: View {
   var title: String
   var items: [Model]
   
+  @Binding var isShowing: Bool
+  
   private let gridLayout = [GridItem(.fixed(150))]
   
   var body: some View {
@@ -47,9 +49,9 @@ struct HorizontalGrid: View {
       ScrollView(.horizontal, showsIndicators: false) {
         LazyHGrid(rows: gridLayout, spacing: 30) {
           ForEach(0..<items.count) { item in
-            Color(UIColor.secondarySystemFill)
-              .frame(width: 150, height: 150)
-              .cornerRadius(10)
+            BrowseItem(image: items[item].thumbnail) {
+              self.isShowing = false
+            }
           }
         }
         .padding(.leading, 22)
@@ -59,14 +61,33 @@ struct HorizontalGrid: View {
   }
 }
 
+struct BrowseItem: View {
+  
+  let image: UIImage
+  let action: () -> Void
+  
+  var body: some View {
+    Button(action: action) {
+      Image(uiImage: image)
+        .resizable()
+        .scaledToFit()
+        .background(Color(UIColor.secondarySystemFill))
+        .frame(width: 150, height: 150)
+        .cornerRadius(10)
+    }
+  }
+}
+
 struct ModelsByCategoryGrid: View {
+  
   let models = Models()
+  @Binding var isShowing: Bool
   
   var body: some View {
     VStack {
       ForEach(ModelCategory.allCases, id: \.self) { category in
         if let modelsByCategory = models.get(category: category) {
-          HorizontalGrid(title: category.label, items: modelsByCategory)
+          HorizontalGrid(title: category.label, items: modelsByCategory, isShowing: $isShowing)
         }
       }
     }
