@@ -19,6 +19,15 @@
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
 		BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A4277A2080003F52F4 /* BrowseView.swift */; };
 		BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A6277A2BA3003F52F4 /* Model.swift */; };
+		BECF9EBF2784C3AE0085A28E /* Airplane.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE61564E277C6A3000B4CC09 /* Airplane.reality */; };
+		BECF9EC02784C5270085A28E /* RedWhiteChair.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */; };
+		BECF9EC12784C5270085A28E /* DefaultChair.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615652277C6A3100B4CC09 /* DefaultChair.reality */; };
+		BECF9EC22784C5270085A28E /* Flower.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615655277C6A3100B4CC09 /* Flower.reality */; };
+		BECF9EC32784C5270085A28E /* LeatherSofa.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615651277C6A3100B4CC09 /* LeatherSofa.reality */; };
+		BECF9EC42784C5270085A28E /* BucketsShelf.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615656277C6A3300B4CC09 /* BucketsShelf.reality */; };
+		BECF9EC52784C5270085A28E /* Robot.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE61564F277C6A3000B4CC09 /* Robot.reality */; };
+		BECF9EC62784C5270085A28E /* Cactus.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615650277C6A3100B4CC09 /* Cactus.reality */; };
+		BECF9EC92784E04B0085A28E /* Trash.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BECF9EC82784E04B0085A28E /* Trash.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +49,10 @@
 		BE615650277C6A3100B4CC09 /* Cactus.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cactus.reality; sourceTree = "<group>"; };
 		BE615651277C6A3100B4CC09 /* LeatherSofa.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeatherSofa.reality; sourceTree = "<group>"; };
 		BE615652277C6A3100B4CC09 /* DefaultChair.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = DefaultChair.reality; sourceTree = "<group>"; };
-		BE615653277C6A3100B4CC09 /* Trash.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trash.reality; sourceTree = "<group>"; };
 		BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedWhiteChair.reality; sourceTree = "<group>"; };
 		BE615655277C6A3100B4CC09 /* Flower.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower.reality; sourceTree = "<group>"; };
 		BE615656277C6A3300B4CC09 /* BucketsShelf.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = BucketsShelf.reality; sourceTree = "<group>"; };
+		BECF9EC82784E04B0085A28E /* Trash.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Trash.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +137,7 @@
 				BE615651277C6A3100B4CC09 /* LeatherSofa.reality */,
 				BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */,
 				BE61564F277C6A3000B4CC09 /* Robot.reality */,
-				BE615653277C6A3100B4CC09 /* Trash.reality */,
+				BECF9EC82784E04B0085A28E /* Trash.usdz */,
 			);
 			path = Reality;
 			sourceTree = "<group>";
@@ -191,8 +200,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECF9EC02784C5270085A28E /* RedWhiteChair.reality in Resources */,
 				BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */,
+				BECF9EC32784C5270085A28E /* LeatherSofa.reality in Resources */,
+				BECF9EC62784C5270085A28E /* Cactus.reality in Resources */,
 				BE105F1227521FB1003BAE68 /* Assets.xcassets in Resources */,
+				BECF9EC52784C5270085A28E /* Robot.reality in Resources */,
+				BECF9EC12784C5270085A28E /* DefaultChair.reality in Resources */,
+				BECF9EBF2784C3AE0085A28E /* Airplane.reality in Resources */,
+				BECF9EC92784E04B0085A28E /* Trash.usdz in Resources */,
+				BECF9EC22784C5270085A28E /* Flower.reality in Resources */,
+				BECF9EC42784C5270085A28E /* BucketsShelf.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,7 @@ struct HorizontalGrid: View {
         LazyHGrid(rows: gridLayout, spacing: 30) {
           ForEach(0..<items.count) { item in
             BrowseItem(image: items[item].thumbnail) {
+              items[item].loadModelEntityAsync()
               self.isShowing = false
             }
           }

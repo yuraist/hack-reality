@@ -5,6 +5,7 @@
 //  Created by Yura Istomin on 27.12.2021.
 //
 
+import Combine
 import SwiftUI
 import RealityKit
 
@@ -32,14 +33,32 @@ class Model {
   var name: String
   var category: ModelCategory
   var thumbnail: UIImage
-  var modelEntity: ModelEntity?
+  var modelEntity: Entity?
   var scaleCompensation: Float
+  
+  private var cancellable: AnyCancellable?
   
   init(name: String, category: ModelCategory, scaleCompensation: Float = 1.0) {
     self.name = name
     self.category = category
     self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
     self.scaleCompensation = scaleCompensation
+  }
+  
+  func loadModelEntityAsync() {
+    cancellable = Entity.loadAsync(named: name)
+      .sink { completion in
+        switch completion {
+        case .failure(let error):
+          print("Model \(self.name) is failed to load: \(error)")
+        case .finished:
+          break
+        }
+      } receiveValue: { entity in
+        print("Model \(self.name) is successfully loaded: \(entity)")
+        self.modelEntity = entity
+        self.modelEntity?.scale *= self.scaleCompensation
+      }
   }
 }
 
