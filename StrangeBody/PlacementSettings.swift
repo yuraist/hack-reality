@@ -21,4 +21,5 @@ class PlacementSettings: ObservableObject {
     }
   }
   
+  var sceneObserver: Cancellable?
 }

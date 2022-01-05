@@ -33,7 +33,7 @@ class Model {
   var name: String
   var category: ModelCategory
   var thumbnail: UIImage
-  var modelEntity: Entity?
+  var modelEntity: ModelEntity?
   var scaleCompensation: Float
   
   private var cancellable: AnyCancellable?
@@ -46,7 +46,7 @@ class Model {
   }
   
   func loadModelEntityAsync() {
-    cancellable = Entity.loadAsync(named: name)
+    cancellable = ModelEntity.loadModelAsync(named: name)
       .sink { completion in
         switch completion {
         case .failure(let error):
