@@ -9,14 +9,22 @@ import SwiftUI
 
 struct ContentView : View {
   
+  @StateObject private var placementSettings = PlacementSettings()
+  
   @State private var showBrowse = false
   
   var body: some View {
-    ZStack {
+    ZStack(alignment: .bottom) {
       SceneViewContainer()
-      ControlView(showBrowse: $showBrowse)
+      
+      if placementSettings.selectedModel == nil {
+        ControlView(showBrowse: $showBrowse)
+      } else {
+        PlacementView()
+      }
     }
     .edgesIgnoringSafeArea(.all)
+    .environmentObject(placementSettings)
   }
 }
 

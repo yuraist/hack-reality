@@ -36,6 +36,7 @@ struct HorizontalGrid: View {
   var items: [Model]
   
   @Binding var isShowing: Bool
+  @EnvironmentObject var placementSettings: PlacementSettings
   
   private let gridLayout = [GridItem(.fixed(150))]
   
@@ -50,7 +51,9 @@ struct HorizontalGrid: View {
         LazyHGrid(rows: gridLayout, spacing: 30) {
           ForEach(0..<items.count) { item in
             BrowseItem(image: items[item].thumbnail) {
-              items[item].loadModelEntityAsync()
+              let model = items[item]
+              model.loadModelEntityAsync()
+              self.placementSettings.selectedModel = model
               self.isShowing = false
             }
           }
