@@ -10,21 +10,24 @@ import SwiftUI
 struct ContentView : View {
   
   @StateObject private var placementSettings = PlacementSettings()
+  @StateObject private var sessionSettings = SessionSettings()
   
   @State private var showBrowse = false
+  @State private var showSettings = false
   
   var body: some View {
     ZStack(alignment: .bottom) {
       ARViewContainer()
       
       if placementSettings.selectedModel == nil {
-        ControlView(showBrowse: $showBrowse)
+        ControlView(showBrowse: $showBrowse, showSettings: $showSettings )
       } else {
         PlacementView()
       }
     }
     .edgesIgnoringSafeArea(.all)
     .environmentObject(placementSettings)
+    .environmentObject(sessionSettings)
   }
 }
 

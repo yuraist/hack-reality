@@ -33,6 +33,8 @@
 		BECF9ED027859D840085A28E /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = BECF9ECF27859D840085A28E /* FocusEntity */; };
 		BECF9ED227859DAE0085A28E /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9ED127859DAE0085A28E /* CustomARView.swift */; };
 		BECF9ED427859E680085A28E /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9ED327859E680085A28E /* ARViewContainer.swift */; };
+		BECF9ED62785B62B0085A28E /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9ED52785B62B0085A28E /* SessionSettings.swift */; };
+		BECF9ED82785B81F0085A28E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9ED72785B81F0085A28E /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		BECF9ECC278599420085A28E /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		BECF9ED127859DAE0085A28E /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		BECF9ED327859E680085A28E /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		BECF9ED52785B62B0085A28E /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		BECF9ED72785B81F0085A28E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +105,11 @@
 				BE005F46275557F700448CE4 /* ControlView.swift */,
 				BE4AA2A4277A2080003F52F4 /* BrowseView.swift */,
 				BECF9ECC278599420085A28E /* PlacementView.swift */,
+				BECF9ED72785B81F0085A28E /* SettingsView.swift */,
 				BECF9ED127859DAE0085A28E /* CustomARView.swift */,
 				BECF9ED327859E680085A28E /* ARViewContainer.swift */,
 				BECF9ECA278597060085A28E /* PlacementSettings.swift */,
+				BECF9ED52785B62B0085A28E /* SessionSettings.swift */,
 				BE4AA2A6277A2BA3003F52F4 /* Model.swift */,
 				BE105F4327523BD3003BAE68 /* Objects */,
 				BE105F21275235BD003BAE68 /* Body */,
@@ -250,8 +256,10 @@
 				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,
 				BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */,
 				BECF9ECB278597060085A28E /* PlacementSettings.swift in Sources */,
+				BECF9ED82785B81F0085A28E /* SettingsView.swift in Sources */,
 				BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */,
 				BE105F1E275220F9003BAE68 /* ARBodyView.swift in Sources */,
+				BECF9ED62785B62B0085A28E /* SessionSettings.swift in Sources */,
 				BE105F42275238C0003BAE68 /* SceneView.swift in Sources */,
 				BE105F47275241A0003BAE68 /* Plane.swift in Sources */,
 				BECF9ED227859DAE0085A28E /* CustomARView.swift in Sources */,
