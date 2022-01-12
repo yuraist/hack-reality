@@ -37,6 +37,8 @@ class ARViewController: UIViewController {
   
   private func addTank() {
     tankAnchor = try! TinyToyTank.load_TinyToyTank()
+    tankAnchor?.turret?.setParent(tankAnchor!.tank, preservingWorldTransform: true)
+    
     arView.scene.anchors.append(tankAnchor!)
   }
   
