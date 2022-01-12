@@ -19,6 +19,9 @@
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
 		BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A4277A2080003F52F4 /* BrowseView.swift */; };
 		BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A6277A2BA3003F52F4 /* Model.swift */; };
+		BE854874278EBB9700482EC0 /* ARTankViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE854873278EBB9700482EC0 /* ARTankViewContainer.swift */; };
+		BE854878278EBD0400482EC0 /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = BE854877278EBD0400482EC0 /* TinyToyTank.rcproject */; };
+		BE85487A278EBDE100482EC0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE854879278EBDE100482EC0 /* ARViewController.swift */; };
 		BECF9EBF2784C3AE0085A28E /* Airplane.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE61564E277C6A3000B4CC09 /* Airplane.reality */; };
 		BECF9EC02784C5270085A28E /* RedWhiteChair.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */; };
 		BECF9EC12784C5270085A28E /* DefaultChair.reality in Resources */ = {isa = PBXBuildFile; fileRef = BE615652277C6A3100B4CC09 /* DefaultChair.reality */; };
@@ -59,6 +62,9 @@
 		BE615654277C6A3100B4CC09 /* RedWhiteChair.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedWhiteChair.reality; sourceTree = "<group>"; };
 		BE615655277C6A3100B4CC09 /* Flower.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flower.reality; sourceTree = "<group>"; };
 		BE615656277C6A3300B4CC09 /* BucketsShelf.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = BucketsShelf.reality; sourceTree = "<group>"; };
+		BE854873278EBB9700482EC0 /* ARTankViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTankViewContainer.swift; sourceTree = "<group>"; };
+		BE854877278EBD0400482EC0 /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
+		BE854879278EBDE100482EC0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		BECF9EC82784E04B0085A28E /* Trash.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Trash.usdz; sourceTree = "<group>"; };
 		BECF9ECA278597060085A28E /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		BECF9ECC278599420085A28E /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -99,8 +105,9 @@
 		BE105F0A27521FB0003BAE68 /* StrangeBody */ = {
 			isa = PBXGroup;
 			children = (
-				BE105F4A2752B61F003BAE68 /* Reality */,
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
+				BE854870278EB9BE00482EC0 /* Tank */,
+				BE105F4A2752B61F003BAE68 /* Reality */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
 				BE005F46275557F700448CE4 /* ControlView.swift */,
 				BE4AA2A4277A2080003F52F4 /* BrowseView.swift */,
@@ -160,6 +167,16 @@
 				BECF9EC82784E04B0085A28E /* Trash.usdz */,
 			);
 			path = Reality;
+			sourceTree = "<group>";
+		};
+		BE854870278EB9BE00482EC0 /* Tank */ = {
+			isa = PBXGroup;
+			children = (
+				BE854877278EBD0400482EC0 /* TinyToyTank.rcproject */,
+				BE854873278EBB9700482EC0 /* ARTankViewContainer.swift */,
+				BE854879278EBDE100482EC0 /* ARViewController.swift */,
+			);
+			path = Tank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,13 +269,16 @@
 				BECF9ECD278599420085A28E /* PlacementView.swift in Sources */,
 				BECF9ED427859E680085A28E /* ARViewContainer.swift in Sources */,
 				BE105F0E27521FB0003BAE68 /* ContentView.swift in Sources */,
+				BE854878278EBD0400482EC0 /* TinyToyTank.rcproject in Sources */,
 				BE105F1C275220EC003BAE68 /* ARBodyViewContainer.swift in Sources */,
 				BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */,
 				BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */,
 				BECF9ECB278597060085A28E /* PlacementSettings.swift in Sources */,
 				BECF9ED82785B81F0085A28E /* SettingsView.swift in Sources */,
 				BE105F0C27521FB0003BAE68 /* AppDelegate.swift in Sources */,
+				BE854874278EBB9700482EC0 /* ARTankViewContainer.swift in Sources */,
 				BE105F1E275220F9003BAE68 /* ARBodyView.swift in Sources */,
+				BE85487A278EBDE100482EC0 /* ARViewController.swift in Sources */,
 				BECF9ED62785B62B0085A28E /* SessionSettings.swift in Sources */,
 				BE105F42275238C0003BAE68 /* SceneView.swift in Sources */,
 				BE105F47275241A0003BAE68 /* Plane.swift in Sources */,

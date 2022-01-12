@@ -17,7 +17,8 @@ struct ContentView : View {
   
   var body: some View {
     ZStack(alignment: .bottom) {
-      ARViewContainer()
+//      ARViewContainer()
+      ARTankViewContainer()
       
       if placementSettings.selectedModel == nil {
         ControlView(showBrowse: $showBrowse, showSettings: $showSettings )
