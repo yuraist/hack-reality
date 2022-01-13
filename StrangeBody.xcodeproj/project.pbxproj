@@ -17,6 +17,10 @@
 		BE105F2027522435003BAE68 /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F1F27522435003BAE68 /* BodySkeleton.swift */; };
 		BE105F42275238C0003BAE68 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F41275238C0003BAE68 /* SceneView.swift */; };
 		BE105F47275241A0003BAE68 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE105F46275241A0003BAE68 /* Plane.swift */; };
+		BE4859DA2790222400955031 /* Pig.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BE4859D72790222400955031 /* Pig.usdz */; };
+		BE4859DB2790222400955031 /* Teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BE4859D82790222400955031 /* Teapot.usdz */; };
+		BE4859DC2790222400955031 /* Gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BE4859D92790222400955031 /* Gramophone.usdz */; };
+		BE4859DF279022A600955031 /* QuickLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4859DE279022A600955031 /* QuickLookViewController.swift */; };
 		BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A4277A2080003F52F4 /* BrowseView.swift */; };
 		BE4AA2A7277A2BA3003F52F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AA2A6277A2BA3003F52F4 /* Model.swift */; };
 		BE854874278EBB9700482EC0 /* ARTankViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE854873278EBB9700482EC0 /* ARTankViewContainer.swift */; };
@@ -52,6 +56,10 @@
 		BE105F1F27522435003BAE68 /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 		BE105F41275238C0003BAE68 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		BE105F46275241A0003BAE68 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		BE4859D72790222400955031 /* Pig.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pig.usdz; sourceTree = "<group>"; };
+		BE4859D82790222400955031 /* Teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Teapot.usdz; sourceTree = "<group>"; };
+		BE4859D92790222400955031 /* Gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Gramophone.usdz; sourceTree = "<group>"; };
+		BE4859DE279022A600955031 /* QuickLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookViewController.swift; sourceTree = "<group>"; };
 		BE4AA2A4277A2080003F52F4 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		BE4AA2A6277A2BA3003F52F4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BE61564E277C6A3000B4CC09 /* Airplane.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = Airplane.reality; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BE105F0B27521FB0003BAE68 /* AppDelegate.swift */,
+				BE4859DD2790222E00955031 /* ARQuickLook */,
 				BE854870278EB9BE00482EC0 /* Tank */,
 				BE105F4A2752B61F003BAE68 /* Reality */,
 				BE105F0D27521FB0003BAE68 /* ContentView.swift */,
@@ -167,6 +176,25 @@
 				BECF9EC82784E04B0085A28E /* Trash.usdz */,
 			);
 			path = Reality;
+			sourceTree = "<group>";
+		};
+		BE4859D62790222400955031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE4859D72790222400955031 /* Pig.usdz */,
+				BE4859D82790222400955031 /* Teapot.usdz */,
+				BE4859D92790222400955031 /* Gramophone.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE4859DD2790222E00955031 /* ARQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				BE4859D62790222400955031 /* Models */,
+				BE4859DE279022A600955031 /* QuickLookViewController.swift */,
+			);
+			path = ARQuickLook;
 			sourceTree = "<group>";
 		};
 		BE854870278EB9BE00482EC0 /* Tank */ = {
@@ -243,6 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4859DA2790222400955031 /* Pig.usdz in Resources */,
+				BE4859DB2790222400955031 /* Teapot.usdz in Resources */,
 				BECF9EC02784C5270085A28E /* RedWhiteChair.reality in Resources */,
 				BE105F1527521FB1003BAE68 /* Preview Assets.xcassets in Resources */,
 				BECF9EC32784C5270085A28E /* LeatherSofa.reality in Resources */,
@@ -254,6 +284,7 @@
 				BECF9EC92784E04B0085A28E /* Trash.usdz in Resources */,
 				BECF9EC22784C5270085A28E /* Flower.reality in Resources */,
 				BECF9EC42784C5270085A28E /* BucketsShelf.reality in Resources */,
+				BE4859DC2790222400955031 /* Gramophone.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE005F47275557F700448CE4 /* ControlView.swift in Sources */,
+				BE4859DF279022A600955031 /* QuickLookViewController.swift in Sources */,
 				BE4AA2A5277A2080003F52F4 /* BrowseView.swift in Sources */,
 				BECF9ECD278599420085A28E /* PlacementView.swift in Sources */,
 				BECF9ED427859E680085A28E /* ARViewContainer.swift in Sources */,

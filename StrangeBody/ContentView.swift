@@ -16,19 +16,20 @@ struct ContentView : View {
   @State private var showSettings = false
   
   var body: some View {
-    ZStack(alignment: .bottom) {
-//      ARViewContainer()
-      ARTankViewContainer()
-      
-      if placementSettings.selectedModel == nil {
-        ControlView(showBrowse: $showBrowse, showSettings: $showSettings )
-      } else {
-        PlacementView()
-      }
-    }
-    .edgesIgnoringSafeArea(.all)
-    .environmentObject(placementSettings)
-    .environmentObject(sessionSettings)
+    QuickLookContainer()
+//    ZStack(alignment: .bottom) {
+////      ARViewContainer()
+////      ARTankViewContainer()
+//
+//      if placementSettings.selectedModel == nil {
+//        ControlView(showBrowse: $showBrowse, showSettings: $showSettings )
+//      } else {
+//        PlacementView()
+//      }
+//    }
+//    .edgesIgnoringSafeArea(.all)
+//    .environmentObject(placementSettings)
+//    .environmentObject(sessionSettings)
   }
 }
 
